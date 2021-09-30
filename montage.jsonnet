@@ -14,7 +14,7 @@ function(suffix, left, right)
 
 // validate arguments
 assert std.length(suffix) > 0 : "Must set suffix to a nonempty string";
-assert std.length(right) > 0 : "Must set src to 'repo' or 'repo@branch'";
+assert std.length(left) > 0 : "Must set src to 'repo' or 'repo@branch'";
 assert std.length(right) > 0 : "Must set src to 'repo' or 'repo@branch'";
 
 // split 'left' into 'repo' and 'branch'
